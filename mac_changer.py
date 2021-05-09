@@ -41,16 +41,3 @@ if current_mac == options.new_mac:
     print("[+] <MAC Address> was successfully changed to " + current_mac)
 else:
     print("[-] <MAC Address> did not get changed.")
-
-# No secure way -> can be Hijacked
-# subprocess.call("ifconfig " + interface + " down", shell=True)
-# subprocess.call("ifconfig " + interface + " hw ether " + new_mac, shell=True)
-# subprocess.call("ifconfig " + interface + " up", shell=True)
-
-# Asking input for user
-# interface = input("interface > ")
-# new_mac = input("new MAC > ")
-
-# Python 2.7
-# interface = raw_input("interface > ")
-# new_mac = raw_input("new MAC > ")
